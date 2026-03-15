@@ -106,6 +106,7 @@ body {
     margin: 0 20px;
     border-radius: 20px;
     border-left: 6px solid #1e3c72;
+    flex: 1;
 }
 
 .container-arr2 {
@@ -114,6 +115,7 @@ body {
     margin: 0 20px;
     border-radius: 20px;
     border-left: 6px solid #1e3c72;
+    flex: 1;
 }
 
 .horas-atividades {
