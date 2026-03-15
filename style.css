@@ -74,3 +74,59 @@ body {
     margin: -40px auto 40px;
     padding: 20px;
 }
+
+.missao-valores {
+    background-color: #FAF9F6;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+.objetivo {
+    background-color: #FAF9F6;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+.arrecadacoes {
+    background-color: #FAF9F6;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+.container-arr1 {
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 20px;
+    border-left: 6px solid #1e3c72;
+}
+
+.container-arr2 {
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 20px;
+    border-left: 6px solid #1e3c72;
+}
+
+.horas-atividades {
+    background-color: #FAF9F6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+.atividade-objetivos p {
+    background-color: #AFE1AF;
+    color: green;
+    padding: 9px;
+    border-radius: 5px;
+    font-weight: bold;
+}
