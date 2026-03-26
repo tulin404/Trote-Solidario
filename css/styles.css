@@ -121,3 +121,59 @@ th {
     border-radius: 8px;
     background: yellow;
 }
+
+.box-cinza {
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    background: gray;
+}
+
+.box-laranja {
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    background: orange;
+}
+
+.box-marrom {
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    background: brown;
+}
+
+.box-preta {
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    background: black;
+}
+
+.box-rosa {
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    background: pink;
+}
+
+.box-roxa {
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    background: purple;
+}
+
+.box-verde {
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    background: green;
+}
+
+.box-vermelha {
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    background: red;
+}
