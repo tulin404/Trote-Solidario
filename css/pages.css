@@ -153,7 +153,6 @@ footer {
     padding: 25px;
     border-top: 3px solid #FFC000;
 }
-
 footer p {
     color: #fff;
     margin: 5px;
@@ -161,6 +160,17 @@ footer p {
 }
 
 /* CSS CRONOGRAMA */
+
+.body-cron {
+    min-height: 100dvh;
+}
+
+.footer-cron {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
 .evento {
     margin-bottom: 25px;
@@ -298,4 +308,38 @@ footer p {
     color: #a66a00;
     font-weight: 500;
     font-size: 16px;
+}
+
+/* CSS CALCULADORA */
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100px;
+}
+
+button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.resultado-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eef5ff;
+    border-left: 5px solid #1e3c72;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
