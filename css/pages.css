@@ -202,3 +202,74 @@ footer p {
     color: #1e3c72;
     margin-top: 0;
 }
+
+/* CSS FORMATO */
+
+.etapas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.etapas-content1 {
+    background-color: #CBDCF7;
+    border-left: 5px solid #1e3c72;
+    margin: 0 20px;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.etapas-content2 {
+    background-color: #CBDCF7;
+    border-left: 5px solid #1e3c72;
+    margin: 0 20px;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.tabela {
+    display: flex;
+    margin-top: 20px;
+}
+
+.coluna {
+    flex: 1;
+}
+
+.tabela h4 {
+    background-color: #1e3c72;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.coluna ul {
+  list-style: none;
+  padding: 15px;
+}
+
+.coluna li {
+    margin-bottom: 10px;
+    color: #a66a00;
+    font-weight: 500;
+}
+
+.medalhas-honra {
+    background-color: #fffadc;
+    border-left: 4px solid #FFC000;
+}
+
+.container-honra {
+    margin: 30px 0;
+}
+
+#topicos-honra {
+    background-color: #CBDCF7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    border-left: 4px solid #1e3c72;
+}
