@@ -52,9 +52,8 @@ body {
     max-width: 900px; margin: -40px auto 40px; padding: 20px;
 }
 section {
-  
     background: white;
-    margin-bottom: 20px;
+    margin: 20px 0;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -272,4 +271,31 @@ footer p {
     border-radius: 10px;
     margin-top: 5px;
     border-left: 4px solid #1e3c72;
+}
+
+/* INTEGRAÇÂO CSS */
+
+.homenagem-content #list-homenagem {
+    color: #c0ad42;
+}
+
+.homenagem-content {
+    padding: 10px;
+}
+
+.exibicao-social {
+    background-color: #fffadc;
+    border-left: 4px solid #FFC000;
+}
+
+.criterios {
+  list-style: none;
+  padding: 15px;
+}
+
+#list-criterios {
+    margin: 0 0 10px 0;
+    color: #a66a00;
+    font-weight: 500;
+    font-size: 16px;
 }
