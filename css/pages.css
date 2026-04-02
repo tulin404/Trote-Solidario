@@ -165,13 +165,6 @@ footer p {
     min-height: 100dvh;
 }
 
-.footer-cron {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
 .evento {
     margin-bottom: 25px;
     position: relative; /* Considera exatamente onde o elemento está */ 

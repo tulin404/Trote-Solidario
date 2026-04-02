@@ -22,6 +22,27 @@
             </div>
         </nav>
         <main class="principal">
+            <section class="">
+                <h3>Simulador de Metas Batidas</h3>
+                <div>
+                    <div class="form-group">
+                        <label> Kit de Alimentação (60 kits) </label> <!--Módulo da caixa de entrada -->
+                        <input type="number" min="0" id="kitAlimentacao"> <!--Caixa de entrada-->
+                    </div>
+                    <div class="form-group">
+                        <label> Suplementos (30 latas)</label> <!--Módulo da caixa de entrada -->
+                        <input type="number" min="0" id="qtdeSuplemento"> <!--Caixa de entrada-->
+                    </div>
+                    <div class="form-group">
+                        <label> Leite (60 caixas)</label> <!--Módulo da caixa de entrada -->
+                        <input type="number" min="0" id="qtdeLeite"> <!--Caixa de entrada-->
+                    </div>
+                    <div class="form-group">
+                        <label> Doações de Sangue (30 doações)</label> <!--Módulo da caixa de entrada -->
+                        <input type="number" min="0" id="qtdeSangue"> <!--Caixa de entrada-->
+                    </div>
+                </div>
+            </section>
             <section class="calculadora">
                 <h3>Simulador de Pontos</h3>
                 <div class="form-grid">
@@ -33,7 +54,17 @@
                         <label> Feijão 2kg - 8 pontos</label>
                         <input type="number" min="0" id="qtdeFeijao">
                     </div>
-                    <button onclick="calcular()">Calcular total da Equipe</button>
+                    <div class="form-group">
+                        <label> Oleo (900ml) - 4 pontos</label>
+                        <input type="number" min="0" id="qtdeOleo">
+                    </div>
+                    <div class="form-group">
+                        <label> Macarrão (500g) - 5 pontos </label>
+                        <input type="number" min="0" id="qtdeMacarrao">
+                    </div>
+            </section>
+            <section>
+                <button onclick="calcular()">Calcular total da Equipe</button>
                 </div>
                 <div id="resultado" class="resultado-box">
                     Pontuação total: 0 pontos
