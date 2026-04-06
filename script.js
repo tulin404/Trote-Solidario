@@ -8,42 +8,59 @@ function calcular() {
     document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
 }
 
+// recupera a cor da equipe
 
-let kitAlimentacao = Number(document.getElementById("kitAlimentacao").value);
-if (kitAlimentacao >= 60) {
+let cor = document.getElementById("cor").value;
+
+
+if (cor == "amarela") {
+    metaProva1 = 54;
+} else if (cor == "cinza") {
+    metaProva1 = 51;
+} else if (cor == "laranja"){
+    metaProva1 = 21;
+} else if (cor == "marrom"){
+    metaProva1 = 88;
+} else if (cor == "preto") {
+    metaProva1 = 60;
+}
+
+let metaProva1 = Number(document.getElementById("kitAlimentacao").value);
+if (kitAlimentacao >= metaProva1) {
     pontos = pontos + 5000;
-} else if (kitAlimentacao > 60) {
-    pontos = pontos + (kitAlimentacao - 60) * 83.3;
+} else if (kitAlimentacao > metaProva1) {
+    pontos = pontos + (kitAlimentacao - metaProva1) * (5000 / metaProva1);
 } else {
-    pontos = pontos + kitAlimentacao * 83.3;
+    pontos = pontos + kitAlimentacao * (5000 / metaProva1);
 }
 
 let qtdSuplemento = Number(document.getElementById("qtdSuplemento").value);
-if (qtdSuplemento >= 30) {
+if (qtdSuplemento >= metaProva1) {
     pontos = pontos + 5000;
-}  else if (qtdSuplemento > 30) {
-    pontos = pontos + (qtdSuplemento - 30) * 83.3;
+}  else if (qtdSuplemento > metaProva1) {
+    pontos = pontos + (qtdSuplemento - metaProva1) * (5000 / metaProva1);
 } else {
-    pontos = pontos + qtdSuplemento * 83.3;
+    pontos = pontos + qtdSuplemento * (5000 / metaProva1);
 }
 
 let qtdeLeite = Number(document.getElementById("qtdeLeite").value);
-if (qtdeLeite >= 30) {
+if (qtdeLeite >= metaProva1) {
     pontos = pontos + 5000;
-}  else if (qtdeLeite > 30) {
-    pontos = pontos + (qtdeLeite - 30) * 83.3;
+}  else if (qtdeLeite > metaProva1) {
+    pontos = pontos + (qtdeLeite - metaProva1) * (5000 / metaProva1);
 } else {
-    pontos = pontos + qtdeLeite * 83.3;
+    pontos = pontos + qtdeLeite * metaProva1;
 }
 
 let qtdeSangue = Numver(document.getElementById("qtdeSangue").value);
-if (qtdeSangue >= 30) {
+if (qtdeSangue >= metaProva1) {
     pontos = pontos + 5000;
-}  else if (qtdeSangue > 30) {
-    pontos = pontos + (qtdeSangue - 30) * 83.3;
+}  else if (qtdeSangue > metaProva1) {
+    pontos = pontos + (qtdeSangue - metaProva1) * (5000 / metaProva1);
 } else {
-    pontos = pontos + qtdeSangue * 83.3;
+    pontos = pontos + qtdeSangue * (5000 / metaProva1);
 }
 
 // DOM - Document Object Model 
-   // Estrutura de árvores 
+// Estrutura de árvores
+
