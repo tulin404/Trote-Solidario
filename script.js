@@ -27,37 +27,51 @@ function calcular() {
     
     if (kitAlimentacao >= metaProva1) {
         pontos = pontos + 5000;
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
     } else if (kitAlimentacao > metaProva1) {
         pontos = pontos + (kitAlimentacao - metaProva1) * (5000 / metaProva1);
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
     } else {
         pontos = pontos + kitAlimentacao * (5000 / metaProva1);
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
     }
     
+    alert(pontos)
+
     let qtdSuplemento = Number(document.getElementById("qtdeSuplemento").value);
     if (qtdSuplemento >= metaProva1) {
         pontos = pontos + 5000;
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
     }  else if (qtdSuplemento > metaProva1) {
         pontos = pontos + (qtdSuplemento - metaProva1) * (5000 / metaProva1);
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
     } else {
         pontos = pontos + qtdSuplemento * (5000 / metaProva1);
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
     }
     
     let qtdeLeite = Number(document.getElementById("qtdeLeite").value);
     if (qtdeLeite >= metaProva1) {
         pontos = pontos + 5000;
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
     }  else if (qtdeLeite > metaProva1) {
         pontos = pontos + (qtdeLeite - metaProva1) * (5000 / metaProva1);
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
     } else {
         pontos = pontos + qtdeLeite * metaProva1;
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
     }
     
     let qtdeSangue = Number(document.getElementById("qtdeSangue").value);
     if (qtdeSangue >= metaProva1) {
         pontos = pontos + 5000;
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
     }  else if (qtdeSangue > metaProva1) {
         pontos = pontos + (qtdeSangue - metaProva1) * (5000 / metaProva1);
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
     } else {
         pontos = pontos + qtdeSangue * (5000 / metaProva1);
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
     }
 }
 
