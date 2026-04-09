@@ -163,6 +163,14 @@ footer p {
 
 .body-cron {
     min-height: 100dvh;
+    position: relative;
+}
+
+.footer-cron {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .evento {

@@ -20,7 +20,7 @@ function calcular() {
         metaProva1 = 21;
     } else if (cor == "marrom"){
         metaProva1 = 88;
-    } else if (cor == "preto") {
+    } else if (cor == "preta") {
         metaProva1 = 60;
     }
     
@@ -33,7 +33,7 @@ function calcular() {
         pontos = pontos + kitAlimentacao * (5000 / metaProva1);
     }
     
-    let qtdSuplemento = Number(document.getElementById("qtdSuplemento").value);
+    let qtdSuplemento = Number(document.getElementById("qtdeSuplemento").value);
     if (qtdSuplemento >= metaProva1) {
         pontos = pontos + 5000;
     }  else if (qtdSuplemento > metaProva1) {
@@ -51,7 +51,7 @@ function calcular() {
         pontos = pontos + qtdeLeite * metaProva1;
     }
     
-    let qtdeSangue = Numver(document.getElementById("qtdeSangue").value);
+    let qtdeSangue = Number(document.getElementById("qtdeSangue").value);
     if (qtdeSangue >= metaProva1) {
         pontos = pontos + 5000;
     }  else if (qtdeSangue > metaProva1) {
