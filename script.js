@@ -10,69 +10,106 @@ function calcular() {
     
     let cor = document.getElementById("cor").value;
     let kitAlimentacao = Number(document.getElementById("kitAlimentacao").value);
-    let metaProva1;
+    let metaKit;
+    let metaSuplemento;
+    let metaLeite;
+    let metaSangue;
+ 
     
     if (cor == "amarela") {
-        metaProva1 = 54;
+        metaKit = 54;
     } else if (cor == "cinza") {
-        metaProva1 = 51;
+        metaKit = 51;
     } else if (cor == "laranja"){
-        metaProva1 = 21;
+        metaKit = 21;
     } else if (cor == "marrom"){
-        metaProva1 = 88;
+        metaKit = 88;
     } else if (cor == "preta") {
-        metaProva1 = 60;
+        metaKit = 60;
     }
     
-    
-    if (kitAlimentacao >= metaProva1) {
-        pontos = pontos + 5000;
-        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
-    } else if (kitAlimentacao > metaProva1) {
-        pontos = pontos + (kitAlimentacao - metaProva1) * (5000 / metaProva1);
-        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
+    if (metaKit % 2 == 0) {
+        metaSuplemento = metaKit / 2;
     } else {
-        pontos = pontos + kitAlimentacao * (5000 / metaProva1);
-        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
+        metaSuplemento = (metaKit / 2) + 1;
     }
     
-    alert(pontos)
+    metaLeite = metaKit;
+    metaSangue =  metaSuplemento;
+
+    if (kitAlimentacao >= metaKit) {
+        pontos = pontos + 5000;
+        mostrarMensagem("🎉 Meta de kits atingida!", "sucesso");
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos.toFixed(2) + " pontos.";
+    } else if (kitAlimentacao > metaKit) {
+        mostrarMensagem("🎉 Meta de kits atingida!", "sucesso");
+        pontos = pontos + (kitAlimentacao - metaKit) * (5000 / metaKit);
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos.toFixed(2) + " pontos.";
+    } else {
+        pontos = pontos + kitAlimentacao * (5000 / metaKit);
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos.toFixed(2) + " pontos.";
+    }
 
     let qtdSuplemento = Number(document.getElementById("qtdeSuplemento").value);
-    if (qtdSuplemento >= metaProva1) {
+    if (qtdSuplemento >= metaSuplemento) {
         pontos = pontos + 5000;
-        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
-    }  else if (qtdSuplemento > metaProva1) {
-        pontos = pontos + (qtdSuplemento - metaProva1) * (5000 / metaProva1);
-        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
+        mostrarMensagem("🎉 Meta de suplementos atingida!", "sucesso");
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos.toFixed(2) + " pontos.";
+    }  else if (qtdSuplemento > metaSuplemento) {
+        mostrarMensagem("🎉 Meta de suplementos atingida!", "sucesso");
+        pontos = pontos + (qtdSuplemento - metaSuplemento) * (5000 / metaSuplemento);
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos.toFixed(2) + " pontos.";
     } else {
-        pontos = pontos + qtdSuplemento * (5000 / metaProva1);
-        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
+        pontos = pontos + qtdSuplemento * (5000 / metaSuplemento);
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos.toFixed(2) + " pontos.";
     }
     
     let qtdeLeite = Number(document.getElementById("qtdeLeite").value);
-    if (qtdeLeite >= metaProva1) {
+    if (qtdeLeite >= metaLeite) {
         pontos = pontos + 5000;
-        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
-    }  else if (qtdeLeite > metaProva1) {
-        pontos = pontos + (qtdeLeite - metaProva1) * (5000 / metaProva1);
-        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
+        mostrarMensagem("🎉 Meta de leite atingida!", "sucesso");
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos.toFixed(2) + " pontos.";
+    }  else if (qtdeLeite > metaLeite) {
+        mostrarMensagem("🎉 Meta de leite atingida!", "sucesso");
+        pontos = pontos + (qtdeLeite - metaLeite) * (5000 / metaLeite);
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos.toFixed(2) + " pontos.";
     } else {
-        pontos = pontos + qtdeLeite * metaProva1;
-        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
+        pontos = pontos + qtdeLeite * metaLeite;
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos.toFixed(2) + " pontos.";
     }
     
     let qtdeSangue = Number(document.getElementById("qtdeSangue").value);
-    if (qtdeSangue >= metaProva1) {
+    if (qtdeSangue >= metaSangue) {
         pontos = pontos + 5000;
-        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
-    }  else if (qtdeSangue > metaProva1) {
-        pontos = pontos + (qtdeSangue - metaProva1) * (5000 / metaProva1);
-        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
+        mostrarMensagem("🎉 Meta de doações de sangue atingida!", "sucesso");
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos.toFixed(2) + " pontos.";
+    }  else if (qtdeSangue > metaSangue) {
+        pontos = pontos + (qtdeSangue - metaSangue) * (5000 / metaSangue);
+        mostrarMensagem("🎉 Meta de doações de sangue atingida!", "sucesso");
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos.toFixed(2) + " pontos.";
     } else {
-        pontos = pontos + qtdeSangue * (5000 / metaProva1);
-        document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos.";
+        pontos = pontos + qtdeSangue * (5000 / metaSangue);
+        document.getElementById("resultado").innerText = "Pontuação total: " + pontos.toFixed(2) + " pontos.";
     }
+
+    // alerts criados (conteúdo adicional)
+    function mostrarMensagem(texto, tipo) {
+        let msg = document.createElement("div");
+        msg.innerText = texto;
+
+        msg.classList.add("toast");
+
+        msg.classList.add("sucesso");
+
+        let container = document.getElementById("toast-container");
+        container.appendChild(msg);
+
+        setTimeout(() => {
+            msg.remove();
+        }, 3000);
+    }   
+
+
 }
 
 
